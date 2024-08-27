@@ -1,0 +1,129 @@
+/* 
+.iframe-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 1200px; 
+    gap: 50px; 
+    margin: 20px;
+}
+
+.iframe-wrapper {
+    width: 80%;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.iframe-wrapper { 
+    width: 80%; 
+    margin: 0 auto; 
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.iframe-title {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #ddd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .iframe-wrapper {
+        width: 100%; 
+    }
+    
+}
+
+
+
+@media (max-width: 480px) {
+   
+}
+
+body{
+    background-color: black;
+}
+ */
+
+
+ /* General container styling */
+.iframe-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ensures the container takes the full width of its parent */
+    max-width: 1200px; /* Limits the maximum width */
+    gap: 50px; /* Space between the iframes */
+    margin: 20px auto; /* Centers the container */
+}
+
+/* Iframe wrapper styling */
+.iframe-wrapper {
+    width: 80%; /* Default width of the iframe wrapper */
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white; /* Background color of the iframe wrapper */
+    margin: 0 auto; /* Center the iframe within its container */
+}
+
+/* Iframe title styling */
+.iframe-title {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #ddd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .iframe-wrapper {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Responsive adjustments for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .iframe-wrapper {
+        width: 100%; /* Ensures full width on very small screens */
+    }
+
+    .iframe-title {
+        font-size: 16px; /* Slightly smaller font for very small screens */
+        padding: 8px; /* Adjust padding for small screens */
+    }
+}
+
+/* Body background color */
+body {
+    background-color: black;
+}
+
